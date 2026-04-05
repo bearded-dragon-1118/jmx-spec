@@ -53,6 +53,9 @@ Some fields may still appear in raw or partially formatted form.
 
 ### Before (JMeter XML)
 
+<img width="1553" height="858" alt="image" src="https://github.com/user-attachments/assets/ba1ca4f9-35cd-44dd-95d9-f58ba5d58e80" />
+
+
 ```xml
 <stringProp name="ThreadGroup.num_threads">50</stringProp>
 <stringProp name="HTTPSampler.method">POST</stringProp>
@@ -62,25 +65,22 @@ Some fields may still appear in raw or partially formatted form.
 
 ### After (jmx-spec)
 
+<img width="1553" height="854" alt="image" src="https://github.com/user-attachments/assets/7446fe0b-1707-49bc-abe3-c09842f7453b" />
+
+
 ```text
 users: 50
-POST /api/login
+POST https://10.xxx.xxx.xx1:80/main2
 ```
+An example of a full Markdown specification generated from sample.jmx is available here:
 
-👉 Easy to understand at a glance
-
+https://github.com/bearded-dragon-1118/jmx-spec/tree/main/examples
 ---
 
 ## 🚀 Usage
 
 ```bash
 java -jar jmx-spec.jar test.jmx
-```
-
-or
-
-```bash
-jmx-spec test.jmx
 ```
 
 ---
